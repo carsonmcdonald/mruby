@@ -645,7 +645,6 @@ flo_round(mrb_state *mrb, mrb_value num)
 /*
  *  call-seq:
  *     flt.to_i      ->  integer
- *     flt.to_int    ->  integer
  *     flt.truncate  ->  integer
  *
  *  Returns <i>flt</i> truncated to an <code>Integer</code>.
@@ -715,10 +714,9 @@ num_round(mrb_state *mrb, mrb_value num)
 /* 15.2.8.3.26 */
 /*
  *  call-seq:
- *     int.to_i      ->  integer
- *     int.to_int    ->  integer
- *     int.floor     ->  integer
  *     int.ceil      ->  integer
+ *     int.floor     ->  integer
+ *     int.to_i      ->  integer
  *     int.round     ->  integer
  *     int.truncate  ->  integer
  *
